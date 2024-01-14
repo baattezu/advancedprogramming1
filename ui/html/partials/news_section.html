@@ -1,0 +1,14 @@
+<!-- ui/html/news_section.html -->
+<div class="col-md-8">
+    <h2>{{.SectionTitle}}</h2>
+    {{range .NewsItems}}
+    <div class="card mb-3">
+        <img src="{{.Image}}" class="card-img-top" alt="News Image">
+        <div class="card-body">
+            <h5 class="card-title">{{.Hashtag}}</h5>
+            <p class="card-text">{{.Content}}</p>
+            <a href="{{.Link}}" class="btn btn-primary">Read More</a>
+        </div>
+    </div>
+    {{end}}
+</div>
